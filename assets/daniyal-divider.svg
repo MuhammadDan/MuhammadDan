@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 24" width="100%" height="auto" role="separator">
+  <defs>
+    <linearGradient id="mdk-div-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#451126" stop-opacity="0" />
+      <stop offset="25%" stop-color="#701A3D" stop-opacity="0.3" />
+      <stop offset="50%" stop-color="#C77B9B" stop-opacity="0.8" />
+      <stop offset="75%" stop-color="#701A3D" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#451126" stop-opacity="0" />
+    </linearGradient>
+    <filter id="mdk-div-glow">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <line x1="100" y1="12" x2="1100" y2="12" stroke="url(#mdk-div-grad)" stroke-width="1.2" filter="url(#mdk-div-glow)" />
+  <g transform="translate(600, 12)">
+    <rect x="-4" y="-4" width="8" height="8" fill="#190B12" stroke="#C77B9B" stroke-width="1" transform="rotate(45)" />
+    <circle cx="0" cy="0" r="1.5" fill="#F8F0F3" />
+  </g>
+</svg>
+
