@@ -1,0 +1,343 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="100%" height="auto" role="img" aria-label="Muhammad Daniyal Khan - Professional Experience">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="exp-bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10070C">
+        <animate attributeName="stop-color" values="#10070C;#190B12;#10070C" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#190B12">
+        <animate attributeName="stop-color" values="#190B12;#451126;#190B12" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#10070C">
+        <animate attributeName="stop-color" values="#10070C;#190B12;#10070C" dur="8s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <!-- Top Border Highlight -->
+    <linearGradient id="exp-top-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#451126" stop-opacity="0.1" />
+      <stop offset="30%" stop-color="#701A3D" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#E5B5C7" stop-opacity="1">
+        <animate attributeName="stop-color" values="#E5B5C7;#F8F0F3;#C77B9B;#E5B5C7" dur="5s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="70%" stop-color="#701A3D" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#451126" stop-opacity="0.1" />
+    </linearGradient>
+
+    <!-- Moving Underline Beam -->
+    <linearGradient id="exp-beam-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#701A3D" stop-opacity="0">
+        <animate attributeName="offset" values="-0.5; 1.0" dur="4s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="30%" stop-color="#C77B9B" stop-opacity="0.8">
+        <animate attributeName="offset" values="-0.2; 1.3" dur="4s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#F8F0F3" stop-opacity="1">
+        <animate attributeName="offset" values="0.0; 1.5" dur="4s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="70%" stop-color="#C77B9B" stop-opacity="0.8">
+        <animate attributeName="offset" values="0.2; 1.7" dur="4s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#701A3D" stop-opacity="0">
+        <animate attributeName="offset" values="0.5; 2.0" dur="4s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <!-- Sweeping Laser Scan Line -->
+    <linearGradient id="exp-laser-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C77B9B" stop-opacity="0" />
+      <stop offset="45%" stop-color="#701A3D" stop-opacity="0.25" />
+      <stop offset="50%" stop-color="#F8F0F3" stop-opacity="0.8" />
+      <stop offset="55%" stop-color="#701A3D" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#C77B9B" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Ambient Breathing Glow -->
+    <radialGradient id="exp-glow-pulse" cx="80%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#701A3D" stop-opacity="0.35">
+        <animate attributeName="stop-opacity" values="0.2;0.45;0.2" dur="6s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="60%" stop-color="#451126" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#10070C" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Glow Filter -->
+    <filter id="exp-bloom" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <pattern id="exp-grid-pat" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#451126" stroke-width="0.7" stroke-opacity="0.2" />
+      <circle cx="36" cy="36" r="0.8" fill="#701A3D" fill-opacity="0.3" />
+    </pattern>
+  </defs>
+
+  
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    .serif { font-family: "Playfair Display", Georgia, Cambria, "Times New Roman", serif; }
+
+    @media (prefers-reduced-motion: reduce) {
+      animate, animateTransform, animateMotion {
+        animation: none !important;
+      }
+    }
+  </style>
+
+
+  <!-- Canvas Surface -->
+  <rect width="1200" height="520" rx="16" fill="url(#exp-bg-grad)" />
+  <rect width="1200" height="520" rx="16" fill="url(#exp-glow-pulse)" />
+  <rect x="2" y="2" width="1196" height="516" rx="15" fill="url(#exp-grid-pat)" />
+
+  <!-- Borders -->
+  <rect x="1" y="1" width="1198" height="518" rx="15" fill="none" stroke="#701A3D" stroke-width="1.5" stroke-opacity="0.45" />
+  <line x1="40" y1="1" x2="1160" y2="1" stroke="url(#exp-top-glow)" stroke-width="2" />
+
+  <!-- Corner Precision Accents -->
+  <path d="M 16 32 L 32 32 L 32 16" fill="none" stroke="#701A3D" stroke-width="1.2" opacity="0.6" />
+  <path d="M 1184 32 L 1168 32 L 1168 16" fill="none" stroke="#701A3D" stroke-width="1.2" opacity="0.6" />
+  <path d="M 16 488 L 32 488 L 32 504" fill="none" stroke="#701A3D" stroke-width="1.2" opacity="0.6" />
+  <path d="M 1184 488 L 1168 488 L 1168 504" fill="none" stroke="#701A3D" stroke-width="1.2" opacity="0.6" />
+
+  <!-- Sweeping Laser Scan Line -->
+  <g opacity="0.75">
+    <rect y="2" width="60" height="516" fill="url(#exp-laser-grad)">
+      <animate attributeName="x" values="30;1110;30" dur="7.5s" repeatCount="indefinite" />
+    </rect>
+    <line y1="2" y2="518" stroke="#F8F0F3" stroke-width="1.5" opacity="0.8" filter="url(#exp-bloom)">
+      <animate attributeName="x1" values="60;1140;60" dur="7.5s" repeatCount="indefinite" />
+      <animate attributeName="x2" values="60;1140;60" dur="7.5s" repeatCount="indefinite" />
+    </line>
+  </g>
+
+  <!-- ==================== HEADER SECTION ==================== -->
+  <g transform="translate(50, 42)">
+    <!-- Eyebrow -->
+    <g transform="translate(0, 0)">
+      <circle cx="4" cy="-3" r="3.5" fill="#C77B9B">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="1.8s" repeatCount="indefinite" />
+        <animate attributeName="r" values="3;4.5;3" dur="1.8s" repeatCount="indefinite" />
+      </circle>
+      <text x="18" y="0" class="mono" font-size="10.5" font-weight="600" fill="#C77B9B" letter-spacing="2">02 • CAREER TIMELINE &amp; PRODUCTION IMPACT</text>
+    </g>
+
+    <!-- Title -->
+    <text x="0" y="32" class="sans" font-size="28" font-weight="800" fill="#F8F0F3" letter-spacing="0.5">
+      PROFESSIONAL EXPERIENCE <tspan class="serif" font-style="italic" font-weight="400" font-size="20" fill="#E5B5C7">— Production Engineering</tspan>
+    </text>
+
+    <!-- Animated Glowing Underline -->
+    <g transform="translate(0, 44)">
+      <line x1="0" y1="0" x2="620" y2="0" stroke="#451126" stroke-width="1.5" opacity="0.6" />
+      <line x1="0" y1="0" x2="620" y2="0" stroke="url(#exp-beam-grad)" stroke-width="2.5" filter="url(#exp-bloom)" />
+      <line x1="0" y1="0" x2="0" y2="0" stroke="#E5B5C7" stroke-width="2">
+        <animate attributeName="x2" values="0;620;540;620" dur="4.5s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.4;1;0.7;1" dur="4.5s" repeatCount="indefinite" />
+      </line>
+    </g>
+  </g>
+
+  <!-- ==================== ANIMATED TIMELINE BAR ==================== -->
+  <g transform="translate(50, 114)">
+    <!-- Baseline track -->
+    <line x1="0" y1="12" x2="1100" y2="12" stroke="#451126" stroke-width="2" opacity="0.7" />
+    
+    <!-- Moving Timeline Pulse Line -->
+    <line x1="0" y1="12" x2="1100" y2="12" stroke="url(#exp-beam-grad)" stroke-width="2.5" filter="url(#exp-bloom)">
+      <animate attributeName="stroke-dashoffset" values="1100;0" dur="6s" repeatCount="indefinite" />
+    </line>
+
+    <!-- Milestone 1: Dec 2025 -->
+    <g transform="translate(90, 12)">
+      <circle cx="0" cy="0" r="6" fill="#190B12" stroke="#701A3D" stroke-width="2" />
+      <circle cx="0" cy="0" r="3" fill="#C77B9B" />
+      <text x="0" y="-12" text-anchor="middle" class="mono" font-size="10.5" font-weight="600" fill="#E5B5C7">DEC 2025</text>
+      <text x="0" y="22" text-anchor="middle" class="mono" font-size="9" fill="#C77B9B" opacity="0.8">ONBOARDING &amp; SPRINT</text>
+    </g>
+
+    <!-- Milestone 2: Jan-Feb 2026 -->
+    <g transform="translate(550, 12)">
+      <circle cx="0" cy="0" r="8" fill="#190B12" stroke="#C77B9B" stroke-width="2">
+        <animate attributeName="r" values="7;9.5;7" dur="2.5s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="0" cy="0" r="4" fill="#F8F0F3" filter="url(#exp-bloom)" />
+      <text x="0" y="-12" text-anchor="middle" class="mono" font-size="10.5" font-weight="700" fill="#F8F0F3">JAN – FEB 2026</text>
+      <text x="0" y="22" text-anchor="middle" class="mono" font-size="9" fill="#E5B5C7" opacity="0.85">PARALLEL PRODUCTION DELIVERY</text>
+    </g>
+
+    <!-- Milestone 3: Present -->
+    <g transform="translate(1010, 12)">
+      <circle cx="0" cy="0" r="6" fill="#190B12" stroke="#701A3D" stroke-width="2" />
+      <circle cx="0" cy="0" r="3" fill="#C77B9B">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="1.5s" repeatCount="indefinite" />
+      </circle>
+      <text x="0" y="-12" text-anchor="middle" class="mono" font-size="10.5" font-weight="600" fill="#E5B5C7">PRESENT</text>
+      <text x="0" y="22" text-anchor="middle" class="mono" font-size="9" fill="#C77B9B" opacity="0.8">ACTIVE ARCHITECTURE</text>
+    </g>
+
+    <!-- Traveling Pulse Beacon on Timeline -->
+    <circle r="4" fill="#F8F0F3" filter="url(#exp-bloom)">
+      <animateMotion dur="6s" repeatCount="indefinite" path="M 0 12 L 1100 12" />
+    </circle>
+  </g>
+
+  <!-- ==================== TWO SIDE-BY-SIDE PRODUCTION CARDS ==================== -->
+  
+  <!-- CARD 1: FRESHSHIFTS -->
+  <g transform="translate(50, 170)">
+    <!-- Card Surface -->
+    <rect width="535" height="315" rx="12" fill="#190B12" stroke="#451126" stroke-width="1.2" />
+    <rect x="0" y="0" width="535" height="315" rx="12" fill="none" stroke="#701A3D" stroke-width="0.5" stroke-opacity="0.6" />
+    
+    <!-- Top Role Badge -->
+    <g transform="translate(24, 20)">
+      <rect width="215" height="22" rx="11" fill="#10070C" stroke="#701A3D" stroke-width="1" />
+      <circle cx="10" cy="11" r="3" fill="#C77B9B" />
+      <text x="20" y="15" class="mono" font-size="9.5" font-weight="600" fill="#E5B5C7" letter-spacing="0.8">HYBRID MOBILE &amp; APIS</text>
+    </g>
+
+    <!-- Role & Company -->
+    <text x="24" y="68" class="sans" font-size="20" font-weight="700" fill="#F8F0F3">Mobile App &amp; Backend Developer</text>
+    <text x="24" y="90" class="mono" font-size="12" font-weight="600" fill="#C77B9B">FreshShifts <tspan font-weight="400" fill="#E5B5C7">· Dec 2025 – Feb 2026 · Karachi, Pakistan</tspan></text>
+    
+    <line x1="24" y1="104" x2="511" y2="104" stroke="#451126" stroke-width="1" opacity="0.7" />
+
+    <!-- 4 Verified Bullet Points -->
+    <!-- Bullet 1 -->
+    <g transform="translate(24, 126)">
+      <circle cx="4" cy="5" r="2.5" fill="#C77B9B" />
+      <text x="16" y="9" class="sans" font-size="12.5" fill="#F8F0F3">
+        Engineered cross-platform mobile apps in <tspan font-weight="700" fill="#E5B5C7">React Native</tspan> &amp; native <tspan font-weight="700" fill="#E5B5C7">Kotlin</tspan> Android.
+      </text>
+    </g>
+    <!-- Bullet 2 -->
+    <g transform="translate(24, 156)">
+      <circle cx="4" cy="5" r="2.5" fill="#C77B9B" />
+      <text x="16" y="9" class="sans" font-size="12.5" fill="#F8F0F3">
+        Built scalable <tspan font-weight="700" fill="#E5B5C7">RESTful APIs</tspan> and services in <tspan font-weight="700" fill="#E5B5C7">Node.js</tspan> &amp; <tspan font-weight="700" fill="#E5B5C7">Express.js</tspan> for mobile workflows.
+      </text>
+    </g>
+    <!-- Bullet 3 -->
+    <g transform="translate(24, 186)">
+      <circle cx="4" cy="5" r="2.5" fill="#C77B9B" />
+      <text x="16" y="9" class="sans" font-size="12.5" fill="#F8F0F3">
+        Optimized database queries and stored management pipelines with <tspan font-weight="700" fill="#E5B5C7">PL/SQL</tspan>.
+      </text>
+    </g>
+    <!-- Bullet 4 -->
+    <g transform="translate(24, 216)">
+      <circle cx="4" cy="5" r="2.5" fill="#C77B9B" />
+      <text x="16" y="9" class="sans" font-size="12.5" fill="#F8F0F3">
+        Managed containerized development and deployment stacks using <tspan font-weight="700" fill="#E5B5C7">Docker</tspan>.
+      </text>
+    </g>
+
+    <!-- Tech Tag Pills -->
+    <g transform="translate(24, 248)">
+      <rect x="0" y="0" width="88" height="20" rx="4" fill="#10070C" stroke="#451126" stroke-width="1" />
+      <text x="44" y="14" text-anchor="middle" class="mono" font-size="9" fill="#E5B5C7">React Native</text>
+
+      <rect x="96" y="0" width="58" height="20" rx="4" fill="#10070C" stroke="#451126" stroke-width="1" />
+      <text x="125" y="14" text-anchor="middle" class="mono" font-size="9" fill="#E5B5C7">Kotlin</text>
+
+      <rect x="162" y="0" width="65" height="20" rx="4" fill="#10070C" stroke="#451126" stroke-width="1" />
+      <text x="194.5" y="14" text-anchor="middle" class="mono" font-size="9" fill="#E5B5C7">Node.js</text>
+
+      <rect x="235" y="0" width="60" height="20" rx="4" fill="#10070C" stroke="#451126" stroke-width="1" />
+      <text x="265" y="14" text-anchor="middle" class="mono" font-size="9" fill="#E5B5C7">PL/SQL</text>
+
+      <rect x="303" y="0" width="58" height="20" rx="4" fill="#10070C" stroke="#451126" stroke-width="1" />
+      <text x="332" y="14" text-anchor="middle" class="mono" font-size="9" fill="#E5B5C7">Docker</text>
+    </g>
+
+    <!-- Animated Telemetry Loader Bar -->
+    <g transform="translate(24, 286)">
+      <rect width="487" height="3" rx="1.5" fill="#10070C" />
+      <rect height="3" rx="1.5" fill="#C77B9B">
+        <animate attributeName="width" values="240;487;360;487" dur="4s" repeatCount="indefinite" />
+      </rect>
+    </g>
+  </g>
+
+  <!-- CARD 2: 360XPERTSOLUTIONS -->
+  <g transform="translate(615, 170)">
+    <!-- Card Surface -->
+    <rect width="535" height="315" rx="12" fill="#190B12" stroke="#451126" stroke-width="1.2" />
+    <rect x="0" y="0" width="535" height="315" rx="12" fill="none" stroke="#701A3D" stroke-width="0.5" stroke-opacity="0.6" />
+    
+    <!-- Top Role Badge -->
+    <g transform="translate(24, 20)">
+      <rect width="235" height="22" rx="11" fill="#10070C" stroke="#701A3D" stroke-width="1" />
+      <circle cx="10" cy="11" r="3" fill="#E5B5C7" />
+      <text x="20" y="15" class="mono" font-size="9.5" font-weight="600" fill="#E5B5C7" letter-spacing="0.8">HIGH-AVAILABILITY CLOUD</text>
+    </g>
+
+    <!-- Role & Company -->
+    <text x="24" y="68" class="sans" font-size="20" font-weight="700" fill="#F8F0F3">Backend Developer</text>
+    <text x="24" y="90" class="mono" font-size="12" font-weight="600" fill="#C77B9B">360XpertSolutions <tspan font-weight="400" fill="#E5B5C7">· Dec 2025 – Feb 2026 · Karachi, Pakistan</tspan></text>
+    
+    <line x1="24" y1="104" x2="511" y2="104" stroke="#451126" stroke-width="1" opacity="0.7" />
+
+    <!-- 3 Verified Bullet Points -->
+    <!-- Bullet 1 -->
+    <g transform="translate(24, 126)">
+      <circle cx="4" cy="5" r="2.5" fill="#C77B9B" />
+      <text x="16" y="9" class="sans" font-size="12.5" fill="#F8F0F3">
+        Engineered backend services with <tspan font-weight="700" fill="#E5B5C7">Fastify</tspan>, securing <tspan font-weight="700" fill="#E5B5C7">99.9% uptime</tspan> in production.
+      </text>
+    </g>
+    <!-- Bullet 2 -->
+    <g transform="translate(24, 156)">
+      <circle cx="4" cy="5" r="2.5" fill="#C77B9B" />
+      <text x="16" y="9" class="sans" font-size="12.5" fill="#F8F0F3">
+        Integrated REST APIs with frontend teams, reducing page loads by <tspan font-weight="700" fill="#E5B5C7">25%</tspan>.
+      </text>
+    </g>
+    <!-- Bullet 3 -->
+    <g transform="translate(24, 186)">
+      <circle cx="4" cy="5" r="2.5" fill="#C77B9B" />
+      <text x="16" y="9" class="sans" font-size="12.5" fill="#F8F0F3">
+        Automated testing protocols for logic, cutting post-deployment bugs by <tspan font-weight="700" fill="#E5B5C7">30%</tspan>.
+      </text>
+    </g>
+    <!-- Bullet 4 (Architecture Note) -->
+    <g transform="translate(24, 216)">
+      <circle cx="4" cy="5" r="2.5" fill="#C77B9B" />
+      <text x="16" y="9" class="sans" font-size="12.5" fill="#F8F0F3">
+        Accelerated production release cadences with resilient validation architectures.
+      </text>
+    </g>
+
+    <!-- Tech Tag Pills -->
+    <g transform="translate(24, 248)">
+      <rect x="0" y="0" width="58" height="20" rx="4" fill="#10070C" stroke="#451126" stroke-width="1" />
+      <text x="29" y="14" text-anchor="middle" class="mono" font-size="9" fill="#E5B5C7">Fastify</text>
+
+      <rect x="66" y="0" width="85" height="20" rx="4" fill="#10070C" stroke="#451126" stroke-width="1" />
+      <text x="108.5" y="14" text-anchor="middle" class="mono" font-size="9" fill="#E5B5C7">RESTful APIs</text>
+
+      <rect x="159" y="0" width="75" height="20" rx="4" fill="#10070C" stroke="#451126" stroke-width="1" />
+      <text x="196.5" y="14" text-anchor="middle" class="mono" font-size="9" fill="#E5B5C7">Automated Test</text>
+
+      <rect x="242" y="0" width="70" height="20" rx="4" fill="#10070C" stroke="#451126" stroke-width="1" />
+      <text x="277" y="14" text-anchor="middle" class="mono" font-size="9" fill="#E5B5C7">PostgreSQL</text>
+
+      <rect x="320" y="0" width="85" height="20" rx="4" fill="#10070C" stroke="#451126" stroke-width="1" />
+      <text x="362.5" y="14" text-anchor="middle" class="mono" font-size="9" fill="#E5B5C7">Microservices</text>
+    </g>
+
+    <!-- Animated Telemetry Loader Bar -->
+    <g transform="translate(24, 286)">
+      <rect width="487" height="3" rx="1.5" fill="#10070C" />
+      <rect height="3" rx="1.5" fill="#701A3D">
+        <animate attributeName="width" values="180;487;320;487" dur="3.6s" repeatCount="indefinite" />
+      </rect>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,318 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="100%" height="auto" role="img" aria-label="Muhammad Daniyal Khan - Featured Engineering Projects">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="proj-bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10070C">
+        <animate attributeName="stop-color" values="#10070C;#190B12;#10070C" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#190B12">
+        <animate attributeName="stop-color" values="#190B12;#451126;#190B12" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#10070C">
+        <animate attributeName="stop-color" values="#10070C;#190B12;#10070C" dur="8s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <!-- Top Border Highlight -->
+    <linearGradient id="proj-top-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#451126" stop-opacity="0.1" />
+      <stop offset="30%" stop-color="#701A3D" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#E5B5C7" stop-opacity="1">
+        <animate attributeName="stop-color" values="#E5B5C7;#F8F0F3;#C77B9B;#E5B5C7" dur="5s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="70%" stop-color="#701A3D" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#451126" stop-opacity="0.1" />
+    </linearGradient>
+
+    <!-- Moving Beam Gradient for Underline -->
+    <linearGradient id="proj-beam-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#701A3D" stop-opacity="0">
+        <animate attributeName="offset" values="-0.5; 1.0" dur="4s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="30%" stop-color="#C77B9B" stop-opacity="0.8">
+        <animate attributeName="offset" values="-0.2; 1.3" dur="4s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#F8F0F3" stop-opacity="1">
+        <animate attributeName="offset" values="0.0; 1.5" dur="4s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="70%" stop-color="#C77B9B" stop-opacity="0.8">
+        <animate attributeName="offset" values="0.2; 1.7" dur="4s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#701A3D" stop-opacity="0">
+        <animate attributeName="offset" values="0.5; 2.0" dur="4s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <!-- Sweeping Laser Scan Line -->
+    <linearGradient id="proj-laser-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C77B9B" stop-opacity="0" />
+      <stop offset="45%" stop-color="#701A3D" stop-opacity="0.25" />
+      <stop offset="50%" stop-color="#F8F0F3" stop-opacity="0.8" />
+      <stop offset="55%" stop-color="#701A3D" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#C77B9B" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Ambient Breathing Glow -->
+    <radialGradient id="proj-glow-pulse" cx="75%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#701A3D" stop-opacity="0.32">
+        <animate attributeName="stop-opacity" values="0.2;0.45;0.2" dur="6s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="60%" stop-color="#451126" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#10070C" stop-opacity="0" />
+    </radialGradient>
+
+    <filter id="proj-bloom" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <pattern id="proj-grid-pat" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#451126" stroke-width="0.7" stroke-opacity="0.2" />
+      <circle cx="36" cy="36" r="0.8" fill="#701A3D" fill-opacity="0.3" />
+    </pattern>
+  </defs>
+
+  
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    .serif { font-family: "Playfair Display", Georgia, Cambria, "Times New Roman", serif; }
+
+    @media (prefers-reduced-motion: reduce) {
+      animate, animateTransform, animateMotion {
+        animation: none !important;
+      }
+    }
+  </style>
+
+
+  <!-- Canvas Surface -->
+  <rect width="1200" height="780" rx="16" fill="url(#proj-bg-grad)" />
+  <rect width="1200" height="780" rx="16" fill="url(#proj-glow-pulse)" />
+  <rect x="2" y="2" width="1196" height="776" rx="15" fill="url(#proj-grid-pat)" />
+
+  <!-- Borders -->
+  <rect x="1" y="1" width="1198" height="778" rx="15" fill="none" stroke="#701A3D" stroke-width="1.5" stroke-opacity="0.45" />
+  <line x1="40" y1="1" x2="1160" y2="1" stroke="url(#proj-top-glow)" stroke-width="2" />
+
+  <!-- Corner Precision Accents -->
+  <path d="M 16 32 L 32 32 L 32 16" fill="none" stroke="#701A3D" stroke-width="1.2" opacity="0.6" />
+  <path d="M 1184 32 L 1168 32 L 1168 16" fill="none" stroke="#701A3D" stroke-width="1.2" opacity="0.6" />
+  <path d="M 16 748 L 32 748 L 32 764" fill="none" stroke="#701A3D" stroke-width="1.2" opacity="0.6" />
+  <path d="M 1184 748 L 1168 748 L 1168 764" fill="none" stroke="#701A3D" stroke-width="1.2" opacity="0.6" />
+
+  <!-- Sweeping Laser Scan Line -->
+  <g opacity="0.75">
+    <rect y="2" width="60" height="776" fill="url(#proj-laser-grad)">
+      <animate attributeName="x" values="30;1110;30" dur="8.5s" repeatCount="indefinite" />
+    </rect>
+    <line y1="2" y2="778" stroke="#F8F0F3" stroke-width="1.5" opacity="0.8" filter="url(#proj-bloom)">
+      <animate attributeName="x1" values="60;1140;60" dur="8.5s" repeatCount="indefinite" />
+      <animate attributeName="x2" values="60;1140;60" dur="8.5s" repeatCount="indefinite" />
+    </line>
+  </g>
+
+  <!-- ==================== HEADER SECTION ==================== -->
+  <g transform="translate(50, 42)">
+    <g transform="translate(0, 0)">
+      <circle cx="4" cy="-3" r="3.5" fill="#C77B9B">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="1.8s" repeatCount="indefinite" />
+        <animate attributeName="r" values="3;4.5;3" dur="1.8s" repeatCount="indefinite" />
+      </circle>
+      <text x="18" y="0" class="mono" font-size="10.5" font-weight="600" fill="#C77B9B" letter-spacing="2">03 • ARCHITECTURAL PORTFOLIO &amp; REPOSITORIES</text>
+    </g>
+
+    <text x="0" y="32" class="sans" font-size="28" font-weight="800" fill="#F8F0F3" letter-spacing="0.5">
+      FEATURED ENGINEERING PROJECTS <tspan class="serif" font-style="italic" font-weight="400" font-size="20" fill="#E5B5C7">— Verified Systems</tspan>
+    </text>
+
+    <!-- Animated Glowing Underline -->
+    <g transform="translate(0, 44)">
+      <line x1="0" y1="0" x2="680" y2="0" stroke="#451126" stroke-width="1.5" opacity="0.6" />
+      <line x1="0" y1="0" x2="680" y2="0" stroke="url(#proj-beam-grad)" stroke-width="2.5" filter="url(#proj-bloom)" />
+      <line x1="0" y1="0" x2="0" y2="0" stroke="#E5B5C7" stroke-width="2">
+        <animate attributeName="x2" values="0;680;580;680" dur="4.5s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.4;1;0.7;1" dur="4.5s" repeatCount="indefinite" />
+      </line>
+    </g>
+  </g>
+
+  <!-- ==================== 2x3 GRID OF 6 PROJECT CARDS ==================== -->
+
+  <!-- ROW 1, COL 1: AI-Powered Blogging Platform -->
+  <g transform="translate(50, 126)">
+    <rect width="535" height="176" rx="10" fill="#190B12" stroke="#451126" stroke-width="1" />
+    <rect x="0" y="0" width="535" height="176" rx="10" fill="none" stroke="#701A3D" stroke-width="0.5" stroke-opacity="0.6" />
+    
+    <text x="20" y="28" class="sans" font-size="17" font-weight="700" fill="#F8F0F3">AI-Powered Full-Stack Blogging Platform</text>
+    <text x="20" y="48" class="mono" font-size="10" font-weight="600" fill="#C77B9B">Next.js · Fastify · PostgreSQL · OpenAI API · Stripe</text>
+    
+    <text x="20" y="74" class="sans" font-size="12" fill="#E5B5C7">
+      • Prompt-driven AI generation with auto &amp; custom prompts via OpenAI API.
+    </text>
+    <text x="20" y="94" class="sans" font-size="12" fill="#E5B5C7">
+      • Secure OTP authentication with multi-role access control (Admin &amp; User).
+    </text>
+    <text x="20" y="114" class="sans" font-size="12" fill="#E5B5C7">
+      • Integrated Stripe recurring payments, moderation &amp; author analytics dashboards.
+    </text>
+
+    <!-- Mini Progress Bar -->
+    <g transform="translate(20, 150)">
+      <rect width="495" height="2.5" rx="1.25" fill="#10070C" />
+      <rect height="2.5" rx="1.25" fill="#C77B9B">
+        <animate attributeName="width" values="240;495;360;495" dur="3.8s" repeatCount="indefinite" />
+      </rect>
+    </g>
+  </g>
+
+  <!-- ROW 1, COL 2: Full-Stack Course Management Platform -->
+  <g transform="translate(615, 126)">
+    <rect width="535" height="176" rx="10" fill="#190B12" stroke="#451126" stroke-width="1" />
+    <rect x="0" y="0" width="535" height="176" rx="10" fill="none" stroke="#701A3D" stroke-width="0.5" stroke-opacity="0.6" />
+    
+    <text x="20" y="28" class="sans" font-size="17" font-weight="700" fill="#F8F0F3">Full-Stack Course Management Platform</text>
+    <text x="20" y="48" class="mono" font-size="10" font-weight="600" fill="#C77B9B">Next.js App Router · TypeScript · Supabase · tRPC</text>
+    
+    <text x="20" y="74" class="sans" font-size="12" fill="#E5B5C7">
+      • End-to-end type safety unifying client UI and database operations with tRPC.
+    </text>
+    <text x="20" y="94" class="sans" font-size="12" fill="#E5B5C7">
+      • Engineered for 500+ active users with role-based access for students &amp; staff.
+    </text>
+    <text x="20" y="114" class="sans" font-size="12" fill="#E5B5C7">
+      • Real-time updates and authenticated session management using Supabase.
+    </text>
+
+    <g transform="translate(20, 150)">
+      <rect width="495" height="2.5" rx="1.25" fill="#10070C" />
+      <rect height="2.5" rx="1.25" fill="#701A3D">
+        <animate attributeName="width" values="180;495;320;495" dur="4.2s" repeatCount="indefinite" />
+      </rect>
+    </g>
+  </g>
+
+  <!-- ROW 2, COL 1: HomeCare Notification System -->
+  <g transform="translate(50, 318)">
+    <rect width="535" height="176" rx="10" fill="#190B12" stroke="#451126" stroke-width="1" />
+    <rect x="0" y="0" width="535" height="176" rx="10" fill="none" stroke="#701A3D" stroke-width="0.5" stroke-opacity="0.6" />
+    
+    <text x="20" y="28" class="sans" font-size="17" font-weight="700" fill="#F8F0F3">HomeCare — Appointment &amp; Notification Engine</text>
+    <text x="20" y="48" class="mono" font-size="10" font-weight="600" fill="#C77B9B">Node.js · PL/SQL · Docker · Multi-Channel Dispatch</text>
+    
+    <text x="20" y="74" class="sans" font-size="12" fill="#E5B5C7">
+      • Event-driven alerts on appointment creation, reschedule, or cancellation.
+    </text>
+    <text x="20" y="94" class="sans" font-size="12" fill="#E5B5C7">
+      • Real-time dual notification pipeline via Email and WhatsApp dispatches.
+    </text>
+    <text x="20" y="114" class="sans" font-size="12" fill="#E5B5C7">
+      • Resilient query routines in PL/SQL and multi-container Docker orchestration.
+    </text>
+
+    <g transform="translate(20, 150)">
+      <rect width="495" height="2.5" rx="1.25" fill="#10070C" />
+      <rect height="2.5" rx="1.25" fill="#C77B9B">
+        <animate attributeName="width" values="220;495;340;495" dur="3.5s" repeatCount="indefinite" />
+      </rect>
+    </g>
+  </g>
+
+  <!-- ROW 2, COL 2: Handwatch Luxury E-Commerce -->
+  <g transform="translate(615, 318)">
+    <rect width="535" height="176" rx="10" fill="#190B12" stroke="#451126" stroke-width="1" />
+    <rect x="0" y="0" width="535" height="176" rx="10" fill="none" stroke="#701A3D" stroke-width="0.5" stroke-opacity="0.6" />
+    
+    <text x="20" y="28" class="sans" font-size="17" font-weight="700" fill="#F8F0F3">Handwatch Luxury E-Commerce Platform</text>
+    <text x="20" y="48" class="mono" font-size="10" font-weight="600" fill="#C77B9B">React · ASP.NET Core Web API · Microsoft SQL Server</text>
+    
+    <text x="20" y="74" class="sans" font-size="12" fill="#E5B5C7">
+      • Secure stateless JWT token authentication with role-based permissions.
+    </text>
+    <text x="20" y="94" class="sans" font-size="12" fill="#E5B5C7">
+      • Dynamic product CRUD, add-to-cart state, and server-side pagination.
+    </text>
+    <text x="20" y="114" class="sans" font-size="12" fill="#E5B5C7">
+      • Modern, high-conversion UI architecture coupled to scalable REST endpoints.
+    </text>
+
+    <g transform="translate(20, 150)">
+      <rect width="495" height="2.5" rx="1.25" fill="#10070C" />
+      <rect height="2.5" rx="1.25" fill="#E5B5C7">
+        <animate attributeName="width" values="160;495;300;495" dur="4.5s" repeatCount="indefinite" />
+      </rect>
+    </g>
+  </g>
+
+  <!-- ROW 3, COL 1: Flight Booking Application -->
+  <g transform="translate(50, 510)">
+    <rect width="535" height="176" rx="10" fill="#190B12" stroke="#451126" stroke-width="1" />
+    <rect x="0" y="0" width="535" height="176" rx="10" fill="none" stroke="#701A3D" stroke-width="0.5" stroke-opacity="0.6" />
+    
+    <text x="20" y="28" class="sans" font-size="17" font-weight="700" fill="#F8F0F3">Dynamic Flight Booking Application</text>
+    <text x="20" y="48" class="mono" font-size="10" font-weight="600" fill="#C77B9B">React.js · Tailwind CSS · SQL Database</text>
+    
+    <text x="20" y="74" class="sans" font-size="12" fill="#E5B5C7">
+      • Real-time flight search, multi-parameter filtering, and live schedule views.
+    </text>
+    <text x="20" y="94" class="sans" font-size="12" fill="#E5B5C7">
+      • Seat reservation pipelines, customer profile sync, and SQL transactions.
+    </text>
+    <text x="20" y="114" class="sans" font-size="12" fill="#E5B5C7">
+      • Fully responsive interface optimized across mobile, tablet, and desktop viewports.
+    </text>
+
+    <g transform="translate(20, 150)">
+      <rect width="495" height="2.5" rx="1.25" fill="#10070C" />
+      <rect height="2.5" rx="1.25" fill="#C77B9B">
+        <animate attributeName="width" values="200;495;350;495" dur="3.9s" repeatCount="indefinite" />
+      </rect>
+    </g>
+  </g>
+
+  <!-- ROW 3, COL 2: Employee Management Dashboard -->
+  <g transform="translate(615, 510)">
+    <rect width="535" height="176" rx="10" fill="#190B12" stroke="#451126" stroke-width="1" />
+    <rect x="0" y="0" width="535" height="176" rx="10" fill="none" stroke="#701A3D" stroke-width="0.5" stroke-opacity="0.6" />
+    
+    <text x="20" y="28" class="sans" font-size="17" font-weight="700" fill="#F8F0F3">Employee Performance &amp; Operations Dashboard</text>
+    <text x="20" y="48" class="mono" font-size="10" font-weight="600" fill="#C77B9B">React.js · Tailwind CSS · React useContext</text>
+    
+    <text x="20" y="74" class="sans" font-size="12" fill="#E5B5C7">
+      • Centralized state management utilizing React's useContext architectural hook.
+    </text>
+    <text x="20" y="94" class="sans" font-size="12" fill="#E5B5C7">
+      • Interactive monthly performance analytics charts and staff KPI tracking.
+    </text>
+    <text x="20" y="114" class="sans" font-size="12" fill="#E5B5C7">
+      • Operational CRUD records management with responsive design patterns.
+    </text>
+
+    <g transform="translate(20, 150)">
+      <rect width="495" height="2.5" rx="1.25" fill="#10070C" />
+      <rect height="2.5" rx="1.25" fill="#701A3D">
+        <animate attributeName="width" values="170;495;310;495" dur="4.1s" repeatCount="indefinite" />
+      </rect>
+    </g>
+  </g>
+
+  <!-- ==================== BOTTOM TELEMETRY BAR ==================== -->
+  <line x1="50" y1="710" x2="1150" y2="710" stroke="#451126" stroke-width="1" opacity="0.6" />
+  
+  <g transform="translate(50, 742)">
+    <circle cx="4" cy="-3" r="3" fill="#C77B9B">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="1.5s" repeatCount="indefinite" />
+    </circle>
+    <text x="16" y="0" class="mono" font-size="10" fill="#C77B9B" letter-spacing="1">
+      CODEBASES &amp; REPOSITORIES VERIFIED // OPEN-SOURCE AT GITHUB.COM/MUHAMMADDAN
+    </text>
+  </g>
+  <g transform="translate(1150, 742)">
+    <text x="0" y="0" text-anchor="end" class="mono" font-size="10" fill="#E5B5C7" letter-spacing="1" opacity="0.8">
+      STATUS: AUDITED &amp; PRODUCTION-READY ARCHITECTURE
+    </text>
+  </g>
+</svg>
