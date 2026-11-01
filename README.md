@@ -250,6 +250,12 @@ My engineering background spans the TypeScript and JavaScript ecosystem (**Next.
 
 ## 📊 GITHUB ACTIVITY & METRICS
 
+<p align="center">
+  <a href="https://github.com/MuhammadDan">
+    <img src="./assets/daniyal-activity.svg" alt="Muhammad Daniyal Khan GitHub Activity & Metrics" width="100%" />
+  </a>
+</p>
+
 <div align="center">
   <p>
     <a href="https://github.com/MuhammadDan">
